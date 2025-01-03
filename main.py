@@ -1,16 +1,14 @@
 import sys
 import time
-import os  # Import for clearing the terminal
+import os
 
-# Function to print text slowly
 def slow_print(text, delay=0.1):
     for char in text:
-        sys.stdout.write(char)  # Print one character at a time
-        sys.stdout.flush()  # Ensure it is printed immediately
-        time.sleep(delay)  # Wait for the specified delay
-    print()  # Ensure a newline after the text
-
-# Slow print the warning and welcome message
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    print()
+    
 slow_print("Warning! This program is developed by the government of the United States of America. "
            "Do not run this code unless you are a member of the United States police law industry.\n", 0.05)
 
@@ -22,7 +20,7 @@ slow_print("In today's test, you will be tested on your fight or flight response
 
 slow_print("Please type 'yes' to proceed or 'no' to exit.\n", 0.05)
 
-choice = input().strip().lower()  # Ensures case insensitivity and removes extra spaces
+choice = input().strip().lower()
 
 if choice == "yes":
     slow_print("Task one.\n", 0.05)
@@ -53,7 +51,7 @@ if task == "start task":
     if answed == "answer":
         slow_print("…\n", 0.01)
         reply = input("Enter here to reply: ")
-        slow_print("…\n", 0.01)  # Respond with "…" no matter what the user inputs
+        slow_print("…\n", 0.01)
 else:
     slow_print("…\n", 0.01)
 
@@ -61,14 +59,14 @@ slow_print("A technical error has occured while running the program. You will be
 
 Task2 = input().strip().lower()
 
-if Task2 == "start task":  # Fixed missing quotes
+if Task2 == "start task":
     slow_print("Task 2.", 0.05)
     slow_print("Please note that checking whats behind you in this task, will lead to death. Do not turn away from your screen whatsoever to ensure your safety.\n", 0.05)
     slow_print("In this task, you will need to—————————————————————————————————————————————————————————————————————————— kill Huston.\n", 0.05)
 else:
     slow_print("Invalid input. Please restart the program and enter 'start task'.\n", 0.05)
 
-# Clear terminal and introduce a delay
+
 os.system('cls' if os.name == 'nt' else 'clear')
 time.sleep(10)
 
@@ -82,7 +80,7 @@ slow_print("-I'm running out of time dear…\n", 0.5)
 slow_print("-Please… don't die out there this time…\n", 0.5)
 slow_print("-Daddy is going to miss you… see you… Julian…\n", 1)
 
-# Introduce another delay before the next part
+
 time.sleep(5)
 os.system('cls' if os.name == 'nt' else 'clear')
 
